@@ -1,0 +1,395 @@
+/* css meyer untuk melakukan css reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* style untuk website kita */
+
+:root {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;
+  color: #2f2f2b;
+  box-sizing: border-box;
+  --black: #2f2f2b;
+  --yellow: #f4b41a;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f4b41a;
+}
+
+main {
+  width: 80vw;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.self {
+  width: 80vw;
+  margin: 30px auto;
+  display: flex;
+}
+
+header {
+  background-color: var(--yellow);
+}
+
+nav {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  width: 80vw;
+  justify-content: flex-end;
+  padding: 2em;
+}
+
+nav ul li a {
+  margin-left: 3em;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.trigger-container {
+  display: none;
+}
+
+footer {
+  background-color: var(--yellow);
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tag-line {
+  text-align: center;
+  font-style: italic;
+  margin: 30px;
+}
+
+.intro {
+  height: 60vh;
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1 {
+  margin: 5px 5px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin: 30px 5px;
+  font-weight: 500;
+}
+
+.photo {
+  flex-basis: 30%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  background-color: var(--black);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px 0 var(--black);
+}
+
+.find-me {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.find-me ul {
+  display: flex;
+  margin: 15px 15px 15px 0;
+}
+
+.find-me ul a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-right: 20px;
+}
+
+.find-me ul a:hover {
+  text-decoration: underline;
+}
+
+.notfound {
+  text-align: center;
+}
+
+.title {
+  background-color: var(--black);
+  color: var(--yellow);
+  width: 100%;
+  height: 100px;
+}
+
+.content {
+  width: 600px;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.sec1,
+.sec2 {
+  margin: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.separate {
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--black);
+    flex-direction: column;
+    transform: translateX(100%);
+    width: 70%;
+    height: 100vh;
+    color: var(--yellow);
+    justify-content: flex-start;
+    transition: 0.3s;
+  }
+
+  nav ul.showNav {
+    transform: translateX(0);
+  }
+
+  nav ul li {
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .trigger-container {
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    background-color: var(--yellow);
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .self {
+    flex-direction: column;
+  }
+
+  main {
+    width: 90vw;
+  }
+
+  .intro,
+  .photo,
+  .find-me,
+  .self {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .find-me ul {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 0;
+  }
+
+  .find-me ul li {
+    line-height: 25px;
+  }
+
+  .intro p {
+    text-align: justify;
+  }
+
+  .title {
+    margin-top: 50px;
+  }
+}
