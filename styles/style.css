@@ -219,6 +219,18 @@ nav ul li a:hover {
   display: none;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.logo img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+
 footer {
   background-color: var(--yellow);
   padding: 15px;
@@ -307,6 +319,21 @@ footer {
   margin-top: 40px;
 }
 
+.about {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.text-box {
+  flex-basis: 50%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  align-self: center;
+  line-height: 30px;
+  text-align: justify;
+}
+
 .sec1,
 .sec2 {
   margin: 20px 0;
@@ -350,6 +377,15 @@ footer {
     font-size: 1.3rem;
   }
 
+  .logo {
+    margin-top: 80px;
+  }
+
+  .logo img {
+    width: 192px;
+    height: 192px;
+  }
+
   .trigger-container {
     position: fixed;
     padding: 20px;
@@ -370,7 +406,8 @@ footer {
   .intro,
   .photo,
   .find-me,
-  .self {
+  .self,
+  .text-box {
     width: 100%;
     margin: 30px 0;
   }
@@ -391,5 +428,18 @@ footer {
 
   .title {
     margin-top: 50px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .myLogo img {
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
   }
 }

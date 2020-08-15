@@ -17,9 +17,9 @@ class AboutPage extends HTMLElement {
         </div>
 
         <h2 class="tag-line">"Dream Bigger, Do Bigger"</h2>
-        <div class="content">
+        <div class="about">
             <div class="myLogo">
-                <img src="" alt="My Logo"/>
+                <img src="/icons/maf-logo512.png" alt="My Logo"/>
             </div>
             <div class="text-box">
                 <p>

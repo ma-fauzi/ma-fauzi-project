@@ -13,7 +13,9 @@ class Navbar extends HTMLElement {
 
     <link rel="stylesheet" href="../styles/style.css">
     <nav>
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="/"><img src="/icons/maf-logo512.png" alt="My Photo" /></a>
+        </div>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/work">My Work</a></li>
