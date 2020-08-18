@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
     <link rel="stylesheet" href="../styles/style.css">
     <nav>
         <div class="logo">
-          <a href="/"><img src="/icons/maf-logo512.png" alt="My Photo" /></a>
+          <a href="/"><img src="/icons/maf-logo512.png" alt="My Photo"/></a>
         </div>
         <ul>
             <li><a href="/">Home</a></li>
@@ -23,6 +23,7 @@ class Navbar extends HTMLElement {
             <li><a href="/contact">Contact</a></li>
         </ul>
         <div class="trigger-container">
+          <a class="mobile-logo" href="/"><img src="/icons/maf-logo32.png" alt="My Logo"/></a>
           <a class="trigger" href="#">☰</a>
         </div>
     </nav>

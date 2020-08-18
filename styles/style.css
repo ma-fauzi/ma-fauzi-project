@@ -359,6 +359,7 @@ footer {
     color: var(--yellow);
     justify-content: flex-start;
     transition: 0.3s;
+    margin-top: 50px;
   }
 
   nav ul.showNav {
@@ -366,7 +367,6 @@ footer {
   }
 
   nav ul li {
-    margin-top: 50px;
     padding: 30px;
     width: 100%;
     text-align: center;
@@ -392,7 +392,8 @@ footer {
     display: flex;
     background-color: var(--yellow);
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .self {
@@ -407,19 +408,26 @@ footer {
   .photo,
   .find-me,
   .self,
-  .text-box {
+  .text-box,
+  .content {
     width: 100%;
     margin: 30px 0;
+  }
+
+  .find-me {
+    margin-top: 60px;
+    align-items: center;
   }
 
   .find-me ul {
     display: flex;
     flex-direction: column;
-    margin: 15px 15px 15px 0;
+    text-align: center;
+    margin: 20px 0;
   }
 
   .find-me ul li {
-    line-height: 25px;
+    line-height: 35px;
   }
 
   .intro p {
