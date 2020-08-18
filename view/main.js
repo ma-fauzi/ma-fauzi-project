@@ -9,6 +9,7 @@ const main = () => {
     { path: "/index.html", component: "home-page" },
     { path: "/contact", component: "contact-page" },
     { path: "/about", component: "about-page" },
+    { path: "/work", component: "work-page" },
     { path: "(.*)", component: "not-found" },
   ]);
 };

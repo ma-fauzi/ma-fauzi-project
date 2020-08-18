@@ -14,22 +14,12 @@ class Homepage extends HTMLElement {
     this.shadow.innerHTML = `
         <link rel="stylesheet" href="../styles/style.css">
 
-        <section class="self">
-            <div class="intro">
-            <h1>Hey, I'm</h1>
-            <h1>Muhammad Afif Fauzi</h1>
-            <p>
-                Front-end developer who focuses on simple design and functional user experience.  
-            </p>
-            </div>
-
-            <div class="photo">
-            <img src="/img/myPhoto.jpg" alt="My Photo" />
-            </div>
+        <section class="intro">
+          <h1>Hey, I am</h1>
+          <h1>Muhammad<br>Afif<br>Fauzi</h1>
         </section>
 
         <section class="find-me">
-            <h2>Find Me Online</h2>
             <ul>
             <li>
                 <a href="https://www.linkedin.com/in/ma-fauzi/" target="_blank">

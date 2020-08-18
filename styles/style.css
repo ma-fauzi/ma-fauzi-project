@@ -153,7 +153,7 @@ body {
   background-color: #f4b41a;
 }
 
-main {
+#body-content {
   width: 80vw;
   margin: 30px auto;
   display: flex;
@@ -171,19 +171,18 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 a {
   text-decoration: none;
   color: var(--black);
-}
-
-.self {
-  width: 80vw;
-  margin: 30px auto;
-  display: flex;
 }
 
 header {
@@ -232,6 +231,10 @@ nav ul li a:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: var(--yellow);
   padding: 15px;
   font-size: 1.2rem;
@@ -240,55 +243,54 @@ footer {
 }
 
 .tag-line {
-  text-align: center;
-  font-style: italic;
-  margin: 30px;
-}
-
-.intro {
-  height: 60vh;
-  flex-basis: 70%;
+  width: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-style: italic;
+  margin: 80px auto;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 35px;
 }
 
-.intro h1 {
-  margin: 5px 5px;
-}
-
-.intro p {
+.tag-line p {
   font-size: 1.2rem;
-  margin: 30px 5px;
+}
+
+.tag-line span {
   font-weight: 500;
 }
 
-.photo {
-  flex-basis: 30%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-.photo img {
-  background-color: var(--black);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px 0 var(--black);
+.intro,
+.find-me {
+  width: 50%;
+  margin: auto;
+}
+
+.intro {
+  margin: 100px auto 130px;
+  justify-content: center;
+  text-align: justify;
+  line-height: 90px;
+}
+
+.intro h1 {
+  font-size: 5rem;
 }
 
 .find-me {
   display: flex;
   flex-direction: column;
-  width: 80vw;
 }
 
 .find-me ul {
   display: flex;
-  margin: 15px 15px 15px 0;
+  justify-content: space-between;
 }
 
 .find-me ul a {
@@ -303,6 +305,7 @@ footer {
 }
 
 .notfound {
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -319,17 +322,11 @@ footer {
   margin-top: 40px;
 }
 
-.about {
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
-}
-
 .text-box {
-  flex-basis: 50%;
+  width: 60%;
+  margin: 70px auto;
   font-size: 1.3rem;
   font-weight: 500;
-  align-self: center;
   line-height: 30px;
   text-align: justify;
 }
@@ -396,51 +393,25 @@ footer {
     align-items: center;
   }
 
-  .self {
-    flex-direction: column;
-  }
-
-  main {
+  #body-content {
     width: 90vw;
   }
 
+  footer {
+    position: static;
+  }
+
   .intro,
-  .photo,
   .find-me,
-  .self,
   .text-box,
-  .content {
+  .content,
+  .tag-line {
     width: 100%;
     margin: 30px 0;
   }
 
-  .find-me {
-    margin-top: 60px;
-    align-items: center;
-  }
-
-  .find-me ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .find-me ul li {
-    line-height: 35px;
-  }
-
-  .intro p {
-    text-align: justify;
-  }
-
   .title {
     margin-top: 50px;
-  }
-
-  .about {
-    flex-direction: column;
-    padding: 0;
   }
 
   .myLogo img {
@@ -449,5 +420,33 @@ footer {
 
   .logo {
     display: none;
+  }
+
+  .intro {
+    margin-top: 80px;
+    line-height: 50px;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .find-me {
+    margin-top: 100px;
+  }
+
+  .find-me ul {
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+  }
+
+  .tag-line {
+    flex-direction: column-reverse;
+    text-align: justify;
+  }
+
+  .text-box {
+    margin-top: 50px;
   }
 }
