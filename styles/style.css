@@ -205,7 +205,7 @@ nav ul {
 nav ul li a {
   margin-left: 3em;
   color: var(--main-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: 0.3s;
   font-weight: 500;
 }
@@ -267,8 +267,10 @@ footer {
 }
 
 .intro,
-.find-me {
-  width: 50%;
+.find-me,
+.text-box,
+.card-container {
+  width: 60%;
   margin: auto;
 }
 
@@ -294,7 +296,7 @@ footer {
 }
 
 .find-me ul a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--black);
   margin-right: 20px;
@@ -323,7 +325,6 @@ footer {
 }
 
 .text-box {
-  width: 60%;
   margin: 70px auto;
   font-size: 1.3rem;
   font-weight: 500;
@@ -341,6 +342,71 @@ footer {
 
 .separate {
   margin: 30px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.card {
+  background-color: white;
+  width: 30%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card-thumbnail img {
+  width: 100%;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card-container::after {
+  content: "";
+  width: 15em;
+}
+
+.card-action {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  background-color: var(--black);
+  color: white;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.card-action a {
+  color: white;
+}
+
+.card-action:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 600px) {

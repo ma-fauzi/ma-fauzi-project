@@ -43,6 +43,10 @@ class Homepage extends HTMLElement {
             </li>
             </ul>
         </section>
+
+        <footer>
+          <p>2020 | &copy; Muhammad Afif Fauzi - Project</p>
+        </footer>
         `;
   }
 }
