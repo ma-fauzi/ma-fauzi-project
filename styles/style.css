@@ -471,7 +471,9 @@ footer {
   .find-me,
   .text-box,
   .content,
-  .tag-line {
+  .tag-line,
+  .card-container,
+  .card {
     width: 100%;
     margin: 30px 0;
   }
@@ -514,5 +516,9 @@ footer {
 
   .text-box {
     margin-top: 50px;
+  }
+
+  .card-container {
+    flex-direction: column;
   }
 }
