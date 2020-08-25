@@ -275,14 +275,14 @@ footer {
 }
 
 .intro {
-  margin: 100px auto 130px;
+  margin: 80px auto 50px;
   justify-content: center;
   text-align: justify;
-  line-height: 90px;
+  line-height: 70px;
 }
 
 .intro h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .find-me {

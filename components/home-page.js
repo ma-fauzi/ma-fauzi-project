@@ -23,7 +23,7 @@ class Homepage extends HTMLElement {
             <ul>
             <li>
                 <a href="https://www.linkedin.com/in/ma-fauzi/" target="_blank">
-                LinkedIn
+                Linkedin
                 </a>
             </li>
             <li>
