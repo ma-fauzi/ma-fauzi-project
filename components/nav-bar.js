@@ -21,6 +21,7 @@ class Navbar extends HTMLElement {
             <li><a href="/work">My Work</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="#" id="downloadCV">My CV</a></li>
         </ul>
         <div class="trigger-container">
           <a class="mobile-logo" href="/"><img src="/icons/maf-logo32.png" alt="My Logo"/></a>
@@ -31,16 +32,22 @@ class Navbar extends HTMLElement {
 
     const navTrigger = this.shadow.querySelector(".trigger");
     const navList = this.shadow.querySelector("nav ul");
+    const anchorTag = this.shadow.querySelectorAll("nav ul li a");
+    const downloadCVBtn = this.shadow.getElementById("downloadCV");
+
     navTrigger.addEventListener("click", function () {
       navList.classList.toggle("showNav");
     });
-
-    const anchorTag = this.shadow.querySelectorAll("nav ul li a");
 
     anchorTag.forEach((element) => {
       element.addEventListener("click", function () {
         navList.classList.remove("showNav");
       });
+    });
+
+    downloadCVBtn.addEventListener("click", function () {
+      window.open("/assets/CV _Muhammad Afif Fauzi.pdf");
+      return false;
     });
   }
 }

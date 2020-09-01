@@ -543,4 +543,10 @@ footer {
   .card-container {
     flex-direction: column;
   }
+
+  nav ul li a {
+    color: var(--yellow);
+
+    background-image: none;
+  }
 }
