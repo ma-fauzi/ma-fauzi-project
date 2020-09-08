@@ -1,0 +1,47 @@
+$black-color: #323232;
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  li a {
+    font-size: 1.2rem;
+    transition: 0.3s;
+    padding: 20px;
+
+    &:hover {
+      background-color: $black-color;
+      color: white;
+    }
+  }
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.5);
+}

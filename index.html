@@ -3,35 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MA-Fauzi Project</title>
-    <link rel="stylesheet" href="/styles/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="/icons/maf-logo512.png" />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <link rel="apple-touch-icon" href="/assets/icons/my-logo512.png" />
     <link
       rel="icon"
-      href="/icons/maf-logo32.png"
+      href="/assets/icons/my-logo32.png"
       type="image/png"
       sizes="32x32"
     />
-    <link
-      rel="icon"
-      href="/icons/maf-logo16.png"
-      type="image/png"
-      sizes="16x16"
-    />
+    <title>M.A - Fauzi</title>
   </head>
   <body>
     <header>
-      <nav-bar></nav-bar>
+      <navigation-view></navigation-view>
     </header>
 
     <main>
-      <div id="body-content"></div>
+      <landing-view></landing-view>
+      <section id="projects">
+        <projects-view></projects-view>
+      </section>
+      <section id="about">
+        <about-view></about-view>
+      </section>
+      <section id="contact">
+        <contact-view></contact-view>
+      </section>
     </main>
 
-    <script src="app.js" type="module"></script>
+    <footer>
+      <footer-view></footer-view>
+    </footer>
+    <script src="/src/index.js" type="module"></script>
   </body>
 </html>

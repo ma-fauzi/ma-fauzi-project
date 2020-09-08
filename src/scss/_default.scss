@@ -1,0 +1,24 @@
+$black-color: #323232;
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;
+  color: $black-color;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $black-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}

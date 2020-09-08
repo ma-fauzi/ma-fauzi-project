@@ -1,0 +1,43 @@
+$black-color: #323232;
+
+.landing-section {
+  display: flex;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+
+    a {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $black-color;
+        color: white;
+      }
+    }
+  }
+}
+
+.introduction {
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: left;
+  }
+}

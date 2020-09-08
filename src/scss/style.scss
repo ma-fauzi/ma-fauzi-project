@@ -1,0 +1,227 @@
+@import "reset";
+@import "default";
+@import "navbar";
+@import "home";
+@import "projects";
+@import "about";
+@import "contact";
+@import "footer";
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+strong {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.5);
+  }
+  nav {
+    width: 100%;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+    transform: translateY(-100%);
+    transition: 0.3s;
+    overflow: auto;
+    padding-top: 30px;
+    justify-content: space-evenly;
+  }
+
+  nav ul.showMenu {
+    transform: translateY(0);
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .landing-section {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      line-height: 35px;
+
+      a {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 5px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: $black-color;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .introduction {
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 40px;
+      text-align: left;
+    }
+  }
+
+  .project-section {
+    width: 90%;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .card-project {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .project-thumbnail {
+    display: none;
+  }
+
+  .project-info {
+    flex-direction: row;
+    .project-title {
+      width: 100%;
+
+      span {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .project-action {
+    a {
+      border-radius: 0.1em;
+      font-size: 1.1rem;
+    }
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .about-section,
+  .contact-section {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .quotes {
+    width: 100%;
+    margin: 50px auto 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-cv {
+    align-self: center;
+  }
+
+  .btn-download {
+    font-size: 1.1em;
+  }
+
+  .about-me {
+    width: 100%;
+    margin-top: 30px;
+    p {
+      font-size: 1rem;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .quest {
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.2rem;
+      padding: 1em;
+    }
+  }
+
+  .photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 0;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-top: 50px;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

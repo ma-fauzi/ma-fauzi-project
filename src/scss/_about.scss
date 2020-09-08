@@ -1,0 +1,72 @@
+$black-color: #323232;
+$red-color: #f97068;
+$grey-color: #dbdbdb;
+
+.about-section {
+  width: 70%;
+  margin: 150px auto;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.download-cv {
+  display: flex;
+  align-self: flex-start;
+}
+
+.about-me {
+  width: 60%;
+  p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .about-card {
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+}
+
+.btn-download {
+  padding: 1.2em;
+  font-size: 1.2em;
+  background-color: $black-color;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $red-color;
+    color: $black-color;
+  }
+}
+
+.quotes {
+  width: 70%;
+  margin: 50px auto 0;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    line-height: 30px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
