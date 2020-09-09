@@ -536,6 +536,7 @@ strong {
   .card-project {
     width: 100%;
     margin: 20px 0;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
   }
 
   .project-thumbnail {
@@ -599,6 +600,9 @@ strong {
     font-weight: 700;
     font-size: 1.8rem;
   }
+  .about-me .about-card {
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  }
 
   .contact-section {
     flex-direction: column;
@@ -622,6 +626,7 @@ strong {
   .contact-card {
     width: 100%;
     margin-top: 50px;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
   }
   .contact-card h2 {
     font-size: 1.5rem;
