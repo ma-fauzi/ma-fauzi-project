@@ -14,13 +14,13 @@ nav {
   }
 
   li a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: 0.3s;
-    padding: 20px;
 
     &:hover {
-      background-color: $black-color;
-      color: white;
+      background: -webkit-linear-gradient(45deg, #ff5f6d, #ffc371);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
