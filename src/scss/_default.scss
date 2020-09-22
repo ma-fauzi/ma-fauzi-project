@@ -1,8 +1,10 @@
 $black-color: #323232;
+$scroll-primary: #757f9a;
+$scroll-secondary: #d7dde8;
 
 :root {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   overflow-x: hidden;
   color: $black-color;
   box-sizing: border-box;
@@ -12,6 +14,22 @@ $black-color: #323232;
 ::before,
 ::after {
   box-sizing: inherit;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $scroll-secondary;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-primary;
+    border-radius: 10px;
+  }
 }
 
 a {

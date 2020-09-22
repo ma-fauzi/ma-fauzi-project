@@ -11,39 +11,44 @@ class NavigationView extends HTMLElement {
   render() {
     this.shadow.innerHTML = `
     <link rel="stylesheet" href="/styles/style.css" />
-
-    <div class="fixed">
-    <nav>
-      <div class="logo">
-          <a href="#" class="toTop">
-          <img src="/assets/icons/my-logo512.png" alt="My Logo" />
-          </a>
+    
+    <nav class="navbar">
+      <div class="my-brand">
+        <div class="my-brand-logo">
+          <img src="assets/icons/my-logo.png" alt="My logo" />
+        </div>
       </div>
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+          <img src="assets/icons/home.png" alt="Home"/>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">
+            <img src="assets/icons/projects.png" alt="Projects"/>
+            <span class="link-text">Projects</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link">
+            <img src="assets/icons/about.png" alt="About"/>
+            <span class="link-text">About</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">
+            <img src="assets/icons/contact.png" alt="Contact"/>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
       </ul>
-      <span class="mobile-menu">☰</span>
     </nav>
-    </div>
 
       `;
-
-    const menuMobile = this.shadow.querySelector(".mobile-menu");
-    const ul = this.shadow.querySelector("nav ul");
-    const menuContent = this.shadow.querySelectorAll("nav ul li a");
-
-    menuContent.forEach((item) => {
-      item.addEventListener("click", function () {
-        ul.classList.remove("showMenu");
-      });
-    });
-
-    menuMobile.addEventListener("click", function () {
-      ul.classList.toggle("showMenu");
-    });
   }
 }
 

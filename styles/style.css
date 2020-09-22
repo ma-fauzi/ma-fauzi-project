@@ -133,7 +133,7 @@ table {
 /* style untuk website kita */
 :root {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   overflow-x: hidden;
   color: #323232;
   box-sizing: border-box;
@@ -145,6 +145,18 @@ table {
   box-sizing: inherit;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #d7dde8;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #757f9a;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
   color: #323232;
@@ -154,46 +166,73 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
+.navbar {
+  width: 5rem;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
   display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-}
-nav li a {
-  font-size: 1.3rem;
+  flex-direction: column;
   transition: 0.3s;
 }
-nav li a:hover {
-  background: -webkit-linear-gradient(45deg, #ff5f6d, #ffc371);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.navbar-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.logo {
-  width: 72px;
-  height: 72px;
-}
-.logo img {
+.nav-item {
   width: 100%;
 }
 
-.mobile-menu {
-  display: none;
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem;
+}
+.nav-link img {
+  width: 100%;
+}
+.nav-link:hover .link-text {
+  visibility: visible;
+  opacity: 1;
+  border: 1px solid white;
+  background-color: #323232;
+  border-radius: 0.5rem;
+  color: white;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
+.my-brand {
+  display: flex;
+  align-items: center;
+}
+
+.my-brand-logo {
   width: 100%;
-  background-color: white;
-  box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.my-brand-logo img {
+  width: 100%;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.link-text {
+  transition: visibility 0s, opacity 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
 .landing-section {
@@ -234,7 +273,7 @@ nav li a:hover {
 }
 
 .project-section {
-  width: 70%;
+  width: 75%;
   margin: 100px auto 0;
 }
 
@@ -304,7 +343,7 @@ nav li a:hover {
 }
 
 .about-section {
-  width: 70%;
+  width: 75%;
   margin: 150px auto;
 }
 
@@ -372,7 +411,7 @@ nav li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 75%;
   margin: 100px auto 200px;
 }
 
@@ -439,43 +478,73 @@ strong {
 }
 
 @media screen and (max-width: 1024px) {
-  nav,
-.landing-section,
+  .landing-section,
 .project-section,
 .about-section,
 .contact-section {
     width: 90%;
   }
 
-  nav ul {
-    flex-direction: column;
+  .navbar {
     width: 100vw;
-    height: 80vh;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    align-items: center;
-    z-index: 1;
-    background-color: white;
-    transform: translateY(-100%);
-    transition: 0.3s;
-    overflow: auto;
-    padding-top: 30px;
-    justify-content: space-evenly;
+    bottom: 0;
+    height: 4rem;
   }
 
-  nav ul.showMenu {
-    transform: translateY(0);
-    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  .navbar-nav {
+    flex-direction: row;
   }
 
-  .mobile-menu {
+  .nav-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+  }
+  .nav-link img {
+    width: 2rem;
+  }
+  .nav-link:hover .link-text {
+    display: none;
+  }
+
+  .my-brand {
+    display: none;
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .landing-section {
+    width: 90%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    z-index: 1;
+  }
+
+  .social {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .social ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 35px;
+  }
+  .social ul a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px;
+    transition: 0.3s;
+  }
+  .social ul a:hover {
+    background-color: #323232;
+    color: white;
   }
 
   .about-content {
@@ -502,52 +571,36 @@ strong {
   }
 }
 @media screen and (max-width: 768px) {
-  header {
-    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.5);
-  }
-
-  nav {
-    width: 100%;
-  }
-  nav a {
-    font-size: 1.2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
+  .navbar {
     width: 100vw;
-    height: 80vh;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    align-items: center;
-    z-index: 1;
-    background-color: white;
-    transform: translateY(-100%);
-    transition: 0.3s;
-    overflow: auto;
-    padding-top: 30px;
-    justify-content: space-evenly;
+    bottom: 0;
+    height: 2.5rem;
   }
 
-  nav ul.showMenu {
-    transform: translateY(0);
-    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  .navbar-nav {
+    flex-direction: row;
   }
 
-  .mobile-menu {
+  .nav-link {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    z-index: 1;
-    padding: 10px;
+    justify-content: center;
+    height: 2.5rem;
+  }
+  .nav-link img {
+    width: 2rem;
+  }
+  .nav-link:hover .link-text {
+    display: none;
   }
 
-  .logo {
-    width: 48px;
-    height: 48px;
+  .my-brand {
+    display: none;
+  }
+
+  .link-text {
+    display: none;
   }
 
   .landing-section {
