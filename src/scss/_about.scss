@@ -43,14 +43,14 @@ $grey-color: #dbdbdb;
 .btn-download {
   padding: 1.2em;
   font-size: 1.2em;
-  background-color: $black-color;
-  color: white;
+  color: $black-color;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
+  border: 2px solid $black-color;
 
   &:hover {
-    background-color: $red-color;
-    color: $black-color;
+    background-color: $black-color;
+    color: white;
   }
 }
 

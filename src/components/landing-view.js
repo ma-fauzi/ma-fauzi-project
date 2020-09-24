@@ -27,7 +27,7 @@ class LandingView extends HTMLElement {
                     <li><a target="_blank" href="https://www.instagram.com/ma.fauz1/">Instagram</a></li>
                 </ul>
             </div>
-            </section>
+        </section>
         `;
   }
 }

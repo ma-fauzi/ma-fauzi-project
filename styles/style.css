@@ -242,19 +242,21 @@ html {
 
 .social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: right;
 }
 .social ul {
   display: flex;
   flex-direction: column;
-  line-height: 60px;
+  justify-content: space-between;
+  line-height: 5rem;
 }
 .social ul a {
   font-size: 2rem;
   font-weight: 500;
-  padding: 5px;
-  transition: 0.3s;
+  padding: 0.5rem;
+  transition: 0.2s;
+  border: 2px solid #323232;
 }
 .social ul a:hover {
   background-color: #323232;
@@ -320,15 +322,14 @@ html {
   justify-content: flex-end;
 }
 .project-info .project-action a {
-  background-color: #323232;
+  border: 2px solid #323232;
   font-size: 1.2rem;
   padding: 10px 30px;
-  color: white;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .project-info .project-action a:hover {
-  background-color: #f97068;
-  color: #323232;
+  background-color: #323232;
+  color: white;
 }
 
 .project-description {
@@ -377,14 +378,14 @@ html {
 .btn-download {
   padding: 1.2em;
   font-size: 1.2em;
-  background-color: #323232;
-  color: white;
+  color: #323232;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
+  border: 2px solid #323232;
 }
 .btn-download:hover {
-  background-color: #f97068;
-  color: #323232;
+  background-color: #323232;
+  color: white;
 }
 
 .quotes {
@@ -419,10 +420,10 @@ html {
 }
 .quest p {
   font-size: 2rem;
-  padding: 0.75em;
+  padding: 0.7em;
   margin-left: 20px;
-  background-color: #323232;
-  color: white;
+  border: 2px solid #323232;
+  border-radius: 1rem;
 }
 
 .photo {

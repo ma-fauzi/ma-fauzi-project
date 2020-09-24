@@ -56,15 +56,14 @@ $grey-color: #dbdbdb;
     justify-content: flex-end;
 
     a {
-      background-color: $black-color;
+      border: 2px solid $black-color;
       font-size: 1.2rem;
       padding: 10px 30px;
-      color: white;
-      transition: 0.3s;
+      transition: 0.2s;
 
       &:hover {
-        background-color: $red-color;
-        color: $black-color;
+        background-color: $black-color;
+        color: white;
       }
     }
   }
