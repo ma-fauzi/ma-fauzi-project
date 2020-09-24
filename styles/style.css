@@ -542,10 +542,11 @@ strong {
     font-weight: 500;
     padding: 5px;
     transition: 0.3s;
+    border: none;
   }
   .social ul a:hover {
-    background-color: #323232;
-    color: white;
+    background-color: white;
+    color: #323232;
   }
 
   .about-content {
@@ -569,6 +570,10 @@ strong {
 
   .about-me .about-card {
     box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -632,10 +637,11 @@ strong {
     font-weight: 500;
     padding: 5px;
     transition: 0.3s;
+    border: none;
   }
   .social ul a:hover {
-    background-color: #323232;
-    color: white;
+    background-color: white;
+    color: #323232;
   }
 
   .introduction h1 {
@@ -755,6 +761,10 @@ strong {
   }
   .contact-card p {
     font-size: 1.2rem;
+  }
+
+  footer {
+    margin-bottom: 3rem;
   }
 }
 
