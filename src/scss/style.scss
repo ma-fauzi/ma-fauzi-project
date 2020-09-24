@@ -33,6 +33,7 @@ strong {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    top: unset;
     height: 4rem;
   }
 
@@ -52,6 +53,10 @@ strong {
 
     &:hover .link-text {
       display: none;
+    }
+
+    &:hover img {
+      display: block;
     }
   }
 
@@ -129,6 +134,7 @@ strong {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    top: unset;
     height: 2.5rem;
   }
 
@@ -148,6 +154,10 @@ strong {
 
     &:hover .link-text {
       display: none;
+    }
+
+    &:hover img {
+      display: block;
     }
   }
 
