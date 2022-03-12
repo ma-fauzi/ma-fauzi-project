@@ -20,9 +20,6 @@ class ContactView extends HTMLElement {
         <p>Have a question?</p>
       </div>
       <div class="contact-card">
-        <h2>Phone or Whatsapp</h2>
-        <p>+62 82144844522</p>
-        <br/>
         <h2>Email</h2>
         <p>ma.fauzi@outlook.com</p>
       </div>
