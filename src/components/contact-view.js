@@ -21,7 +21,7 @@ class ContactView extends HTMLElement {
       </div>
       <div class="contact-card">
         <h2>Email</h2>
-        <p>ma.fauzi@outlook.com</p>
+        <p>ma_fauzi@outlook.com</p>
       </div>
     </div>
         `;
